@@ -6,7 +6,7 @@ import { fileTypeFromFile } from "file-type";
 
 export async function getAllFiles() {
   try {
-    const UPLOAD_DIR = join(process.cwd(), "public", "uploads");
+    const UPLOAD_DIR = join(process.cwd(), "src", "assets");
 
     if (!existsSync(UPLOAD_DIR))
       return { status: false, error: "Directory not found" };

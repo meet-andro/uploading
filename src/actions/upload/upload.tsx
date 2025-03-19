@@ -24,7 +24,7 @@ function writeChunk(filePath: string, buffer: ArrayBuffer) {
 
 export async function uploadChunk(payload: UploadChunkPayload) {
   try {
-    const UPLOAD_DIR = join(process.cwd(), "public", "uploads");
+    const UPLOAD_DIR = join(process.cwd(), "src", "assets");
 
     if (!payload.id)
       return {
